@@ -3,8 +3,8 @@ import xml.etree.ElementTree as ET
 
 # SAP configuration (kept here as requested)
 WS_URL = "https://my360636.sapbydesign.com/sap/bc/srt/scs/sap/managesalesorderin5"
-USERNAME = "AVIRREY"
-PASSWORD = "5-iU{F=&_Yn$@,fd"
+USERNAME = "FVARGAS"
+PASSWORD = "RedEyes.2022!"
 PRICECOMP_UUID = "fa163e98-34a6-1fe0-aecf-4575b2b2ff75"
 CURRENCY = "USD"
 
@@ -72,7 +72,8 @@ def send_soap(xml_body, soap_action):
         verify=True,
     )
     if r.status_code != 200 or "<Fault>" in r.text:
-        raise Exception("SOAP call failed")
+        msg = f"SOAP call failed: status={r.status_code}, body={r.text[:1000]}"
+        raise Exception(msg)
     return r.text
 
 
@@ -80,7 +81,7 @@ def update_item_price(order_id, item_id, new_price, pricecomp_uuid: str | None =
     pc_uuid = pricecomp_uuid or PRICECOMP_UUID
     curr = currency or CURRENCY
     xml = build_update_price_payload(order_id, item_id, pc_uuid, new_price, curr)
-    return send_soap(xml, "https://my360636.sapbydesign.com/sap/bc/srt/scs/sap/managesalesorderin5")
+    return send_soap(xml, "http://sap.com/xi/SAPGlobal20/Global/SalesOrderBundleMaintainRequest_sync")
 
 
 def get_sales_order_xml(order_id):

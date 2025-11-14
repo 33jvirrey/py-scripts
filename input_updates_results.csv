@@ -1,0 +1,79 @@
+sales_order_id,line_item,new_price,request_xml,response_xml,status
+679322,10,1001,"<?xml version=""1.0"" encoding=""UTF-8""?>
+<soapenv:Envelope xmlns:soapenv=""http://schemas.xmlsoap.org/soap/envelope/""
+                  xmlns:n0=""http://sap.com/xi/SAPGlobal20/Global"">
+  <soapenv:Header/>
+  <soapenv:Body>
+<n0:SalesOrderBundleMaintainRequest_sync>
+<BasicMessageHeader/>
+<SalesOrder actionCode=""02"">
+<ID>679322</ID>
+<Item actionCode=""02"">
+<ID>10</ID>
+<PriceAndTaxCalculationItem actionCode=""02"">
+<ItemMainPrice actionCode=""04"">
+<Rate>
+<DecimalValue>1001</DecimalValue>
+<CurrencyCode>USD</CurrencyCode>
+<BaseDecimalValue>1.0</BaseDecimalValue>
+<BaseMeasureUnitCode>EA</BaseMeasureUnitCode>
+</Rate>
+</ItemMainPrice>
+</PriceAndTaxCalculationItem>
+</Item>
+</SalesOrder>
+</n0:SalesOrderBundleMaintainRequest_sync>
+  </soapenv:Body>
+</soapenv:Envelope>","<soap-env:Envelope xmlns:soap-env=""http://schemas.xmlsoap.org/soap/envelope/""><soap-env:Header/><soap-env:Body><n0:SalesOrderBundleMaintainConfirmation_sync xmlns:n0=""http://sap.com/xi/SAPGlobal20/Global"" xmlns:prx=""urn:sap.com:proxy:KTB:/1SAI/TAE88DF3AA925C3E49C60CC:804""><SalesOrder><ChangeStateID>                 20251114171439.7800870</ChangeStateID><UUID>fa163e98-34a6-1fd0-afd1-3f3d264db782</UUID><ID>679322</ID></SalesOrder><Log><MaximumLogItemSeverityCode>2</MaximumLogItemSeverityCode><Item><TypeID>372(/AP_TTE_DO_TAXDOC/)</TypeID><CategoryCode>INC.BOI</CategoryCode><SeverityCode>2</SeverityCode><Note>Company 3 not registered in country United States; define relevant tax number. (KBA: 2406976)</Note></Item></Log></n0:SalesOrderBundleMaintainConfirmation_sync></soap-env:Body></soap-env:Envelope>",ok
+679322,20,1002,"<?xml version=""1.0"" encoding=""UTF-8""?>
+<soapenv:Envelope xmlns:soapenv=""http://schemas.xmlsoap.org/soap/envelope/""
+                  xmlns:n0=""http://sap.com/xi/SAPGlobal20/Global"">
+  <soapenv:Header/>
+  <soapenv:Body>
+<n0:SalesOrderBundleMaintainRequest_sync>
+<BasicMessageHeader/>
+<SalesOrder actionCode=""02"">
+<ID>679322</ID>
+<Item actionCode=""02"">
+<ID>20</ID>
+<PriceAndTaxCalculationItem actionCode=""02"">
+<ItemMainPrice actionCode=""04"">
+<Rate>
+<DecimalValue>1002</DecimalValue>
+<CurrencyCode>USD</CurrencyCode>
+<BaseDecimalValue>1.0</BaseDecimalValue>
+<BaseMeasureUnitCode>EA</BaseMeasureUnitCode>
+</Rate>
+</ItemMainPrice>
+</PriceAndTaxCalculationItem>
+</Item>
+</SalesOrder>
+</n0:SalesOrderBundleMaintainRequest_sync>
+  </soapenv:Body>
+</soapenv:Envelope>","<soap-env:Envelope xmlns:soap-env=""http://schemas.xmlsoap.org/soap/envelope/""><soap-env:Header/><soap-env:Body><n0:SalesOrderBundleMaintainConfirmation_sync xmlns:n0=""http://sap.com/xi/SAPGlobal20/Global"" xmlns:prx=""urn:sap.com:proxy:KTB:/1SAI/TAE88DF3AA925C3E49C60CC:804""><SalesOrder><ChangeStateID>                 20251114171451.6133240</ChangeStateID><UUID>fa163e98-34a6-1fd0-afd1-3f3d264db782</UUID><ID>679322</ID></SalesOrder><Log><MaximumLogItemSeverityCode>2</MaximumLogItemSeverityCode><Item><TypeID>372(/AP_TTE_DO_TAXDOC/)</TypeID><CategoryCode>INC.BOI</CategoryCode><SeverityCode>2</SeverityCode><Note>Company 3 not registered in country United States; define relevant tax number. (KBA: 2406976)</Note></Item></Log></n0:SalesOrderBundleMaintainConfirmation_sync></soap-env:Body></soap-env:Envelope>",ok
+679322,30,1003,"<?xml version=""1.0"" encoding=""UTF-8""?>
+<soapenv:Envelope xmlns:soapenv=""http://schemas.xmlsoap.org/soap/envelope/""
+                  xmlns:n0=""http://sap.com/xi/SAPGlobal20/Global"">
+  <soapenv:Header/>
+  <soapenv:Body>
+<n0:SalesOrderBundleMaintainRequest_sync>
+<BasicMessageHeader/>
+<SalesOrder actionCode=""02"">
+<ID>679322</ID>
+<Item actionCode=""02"">
+<ID>30</ID>
+<PriceAndTaxCalculationItem actionCode=""02"">
+<ItemMainPrice actionCode=""04"">
+<Rate>
+<DecimalValue>1003</DecimalValue>
+<CurrencyCode>USD</CurrencyCode>
+<BaseDecimalValue>1.0</BaseDecimalValue>
+<BaseMeasureUnitCode>EA</BaseMeasureUnitCode>
+</Rate>
+</ItemMainPrice>
+</PriceAndTaxCalculationItem>
+</Item>
+</SalesOrder>
+</n0:SalesOrderBundleMaintainRequest_sync>
+  </soapenv:Body>
+</soapenv:Envelope>","<soap-env:Envelope xmlns:soap-env=""http://schemas.xmlsoap.org/soap/envelope/""><soap-env:Header/><soap-env:Body><n0:SalesOrderBundleMaintainConfirmation_sync xmlns:n0=""http://sap.com/xi/SAPGlobal20/Global"" xmlns:prx=""urn:sap.com:proxy:KTB:/1SAI/TAE88DF3AA925C3E49C60CC:804""><SalesOrder><ChangeStateID>                 20251114171504.2025930</ChangeStateID><UUID>fa163e98-34a6-1fd0-afd1-3f3d264db782</UUID><ID>679322</ID></SalesOrder><Log><MaximumLogItemSeverityCode>2</MaximumLogItemSeverityCode><Item><TypeID>372(/AP_TTE_DO_TAXDOC/)</TypeID><CategoryCode>INC.BOI</CategoryCode><SeverityCode>2</SeverityCode><Note>Company 3 not registered in country United States; define relevant tax number. (KBA: 2406976)</Note></Item></Log></n0:SalesOrderBundleMaintainConfirmation_sync></soap-env:Body></soap-env:Envelope>",ok
